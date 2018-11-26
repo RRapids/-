@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import com.soft1841.oop.week2.GuGe1?>
+<?import com.soft1841.oop.week2.GuGe2?>
+<?import com.soft1841.oop.week2.GuGeButton?>
+<?import com.soft1841.oop.week1.MyButton?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.oop.week2.GuGeController">
+    <ImageView AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="30">
+        <Image url="/img/风车.png"/>
+    </ImageView>
+    <ImageView AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0">
+        <Image url="/img/tt.png"/>
+    </ImageView>
+    <ImageView AnchorPane.topAnchor="250" AnchorPane.leftAnchor="570">
+        <Image url="/img/ss.png"/>
+    </ImageView>
+    <ImageView AnchorPane.topAnchor="400" AnchorPane.leftAnchor="400">
+        <Image url="/img/tq.png"/>
+    </ImageView>
+    <ImageView AnchorPane.topAnchor="400" AnchorPane.leftAnchor="640">
+        <Image url="/img/mb.png"/>
+    </ImageView>
+    <ImageView AnchorPane.topAnchor="400" AnchorPane.leftAnchor="890">
+        <Image url="/img/sm.png"/>
+    </ImageView>
+    <ImageView AnchorPane.topAnchor="400" AnchorPane.rightAnchor="640">
+        <Image url="/img/js.png"/>
+    </ImageView>
+    <ImageView AnchorPane.topAnchor="400" AnchorPane.rightAnchor="400">
+        <Image url="/img/zh.png"/>
+    </ImageView>
+    <ImageView AnchorPane.bottomAnchor="270" AnchorPane.leftAnchor="400">
+        <Image url="/img/ls.png"/>
+    </ImageView>
+    <ImageView AnchorPane.bottomAnchor="270" AnchorPane.leftAnchor="640">
+        <Image url="/img/sq.png"/>
+    </ImageView>
+    <ImageView AnchorPane.bottomAnchor="270" AnchorPane.leftAnchor="890">
+        <Image url="/img/bj.png"/>
+    </ImageView>
+    <ImageView AnchorPane.bottomAnchor="270" AnchorPane.rightAnchor="640">
+        <Image url="/img/dbsx.png"/>
+    </ImageView>
+    <ImageView AnchorPane.bottomAnchor="270" AnchorPane.rightAnchor="400">
+        <Image url="/img/qq.png"/>
+    </ImageView>
+    <GuGe1 text="网页       图片      新闻       视频       地图"
+           AnchorPane.topAnchor="200"
+           AnchorPane.leftAnchor="640"/>
+    <GuGe2 text="天气"
+           AnchorPane.topAnchor="535"
+           AnchorPane.leftAnchor="430"/>
+    <GuGe2 text="幕布"
+           AnchorPane.topAnchor="535"
+           AnchorPane.leftAnchor="680"/>
+    <GuGe2 text="石墨文档"
+           AnchorPane.topAnchor="535"
+           AnchorPane.leftAnchor="910"/>
+    <GuGe2 text="简书"
+           AnchorPane.topAnchor="535"
+           AnchorPane.leftAnchor="1205"/>
+    <GuGe2 text="知乎"
+           AnchorPane.topAnchor="535"
+           AnchorPane.leftAnchor="1440"/>
+    <GuGe2 text="历史纪录"
+           AnchorPane.bottomAnchor="220"
+           AnchorPane.leftAnchor="430"/>
+    <GuGe2 text="书签"
+           AnchorPane.bottomAnchor="220"
+           AnchorPane.leftAnchor="680"/>
+    <GuGe2 text="笔记"
+           AnchorPane.bottomAnchor="220"
+           AnchorPane.leftAnchor="925"/>
+    <GuGe2 text="待办事项"
+           AnchorPane.bottomAnchor="220"
+           AnchorPane.leftAnchor="1187"/>
+    <GuGe2 text="QQ邮箱"
+           AnchorPane.bottomAnchor="220"
+           AnchorPane.leftAnchor="1430"/>
+    <GuGeButton AnchorPane.topAnchor="60"
+                AnchorPane.rightAnchor="40"/>
+</AnchorPane>

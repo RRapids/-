@@ -10,6 +10,5 @@ public class MyButton extends Button {
         this.setPrefSize(436,44);
         //给当前按钮设置背景色
         this.setStyle("-fx-background-color: rgb(0, 132, 255);-fx-border-radius: 10;-fx-text-fill: #FFFFFF");
-
     }
 }
