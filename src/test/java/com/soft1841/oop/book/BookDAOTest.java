@@ -23,7 +23,7 @@ public class BookDAOTest {
     @Test
     public void insert() throws SQLException {
         //创建一个Book对象,用来插入
-        Book book = new Book("高等数学",12.8);
+        Book book = new Book("测试","张三",22.3,"https://img3.doubanio.com/view/subject/m/public/s2738366.jpg");
         //受影响的记录行数n
         int n;
         n = bookDAO.insert(book);
@@ -37,6 +37,14 @@ public class BookDAOTest {
         assertEquals(1,n);
 
     }
+    @Test
+    public void get() throws SQLException{
+        //获取id为1的实体信息
+        Entity entity = bookDAO.get(1);
+        System.out.println(entity.get("name") + "," + entity.get("price"));
+    }
+
+
     @Test
     public void update() throws SQLException {
         Book book = new Book();

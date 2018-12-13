@@ -7,10 +7,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class BookDAOImpl implements BookDAO {
-    @Override
-    public List<Entity> getAllBooks() throws SQLException {
-        return Db.use().findAll("t_book");
-    }
 
     @Override
     public int insert(Book book) throws SQLException {
@@ -18,6 +14,8 @@ public class BookDAOImpl implements BookDAO {
                 Entity.create("t_book")
                         .set("name", book.getName())
                         .set("price", book.getPrice())
+                        .set("cover",book.getCover())
+                        .set("author",book.getAuthor())
         );
 
     }
@@ -34,5 +32,14 @@ public class BookDAOImpl implements BookDAO {
                 Entity.create().set("price",book.getPrice()),
                 Entity.create("t_book").set("id",book.getId())
         );
+    }
+    @Override
+    public List<Entity> getAllBooks() throws SQLException {
+        return Db.use().findAll("t_book"); //查询t_book表所有数据
+    }
+
+    @Override
+    public Entity get(int id) throws SQLException {
+        return Db.use().findAll(Entity.create("t_book").set("id", id)).get(0);
     }
 }
